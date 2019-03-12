@@ -4,13 +4,15 @@
   "description": "go lang presentation with mdx",
   "main": "index.js",
   "scripts": {
+    "build": "\"node_modules/.bin/mdx-deck\" build deck.mdx",
+    "start": "\"node_modules/.bin/mdx-deck\" deck.mdx --port 9000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mohseenrm/go-mdx-slides.git"
   },
-  "author": "Mohseen Mukadda <mohseenmukaddam6@gmail.com>",
+  "author": "Mohseen Mukaddam <mohseenmukaddam6@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mohseenrm/go-mdx-slides/issues"
