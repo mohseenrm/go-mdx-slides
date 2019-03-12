@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/mohseenrm/go-mdx-slides#readme",
   "devDependencies": {
-    "mdx-deck": "^2.0.0-11"
+    "mdx-deck": "^2.0.0-11",
+    "mdx-deck-code-surfer": "^0.5.5",
+    "raw-loader": "^1.0.0"
   }
 }
