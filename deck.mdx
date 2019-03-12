@@ -1,4 +1,5 @@
 import { Head, Notes } from 'mdx-deck'
+import { CodeSurfer } from "mdx-deck-code-surfer"
 
 export { condensed as theme } from 'mdx-deck/themes'
 
@@ -21,3 +22,18 @@ Create speaker notes with the Notes component
 ---
 
 <https://github.com/jxnblk/mdx-deck>
+
+---
+
+<CodeSurfer
+  title="Test Code Title"
+  code={require("!raw-loader!./snippets/hola_mundo.go")}
+  lang="go"
+  showNumbers={true}
+  dark={true}
+  steps={[
+    { notes: "Start with this note"},
+    { lines: [2], notes: "Note for the first step" },
+    { range: [3, 6] }
+  ]}
+/>
