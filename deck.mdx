@@ -8,7 +8,7 @@ import Layout from './Layout'
 export { condensed as theme } from 'mdx-deck/themes'
 
 <Head>
-  <title>Presentation Title</title>
+  <title>Go Lang 🥳</title>
 </Head>
 
 # Hello
@@ -25,10 +25,6 @@ Create speaker notes with the Notes component
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
-
----
-
 <CodeSurfer
   title="Hola Mundo!"
   code={require("!raw-loader!./snippets/hola_mundo.go")}
@@ -36,9 +32,10 @@ Create speaker notes with the Notes component
   showNumbers={true}
   dark={true}
   steps={[
-    { notes: "Start with this note"},
-    { lines: [2], notes: "Note for the first step" },
-    { range: [3, 6] }
+    { notes: "Hello world script"},
+    { lines: [1], notes: "packages defined first" },
+    { lines: [3], notes: "followed by imports" },
+    { range: [5, 7], notes: "eq: int main(int argc, char **argv)" }
   ]}
 />
 
@@ -53,9 +50,44 @@ export default Layout
   showNumbers={true}
   dark={true}
   steps={[
-    { notes: "Start with this note"},
-    { lines: [3], notes: "Note for the first step" },
-    { range: [3, 6] }
+    { notes: "Structs, constants and goofyness"},
+    { range: [5, 6], notes: "constants definition" },
+    { range: [8, 12], notes: "struct definition, eq: Classes" },
+    { range: [15, 17], notes: "struct methods" },
+    { range: [20, 24], notes: "objects" },
+    { lines: [27], notes: "call to struct func" },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Pointers"
+  code={require("!raw-loader!./snippets/pointer.go")}
+  lang="go"
+  showNumbers={true}
+  dark={true}
+  steps={[
+    { notes: "Pointers 😎!" },
+    { lines: [6] },
+    { range: [8, 11] },
+    { range: [13, 15] }
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="Function Pointers"
+  code={require("!raw-loader!./snippets/function_pointers.go")}
+  lang="go"
+  showNumbers={true}
+  dark={true}
+  steps={[
+    { notes: "Pointers 😎!" },
+    { lines: [6] },
+    { range: [8, 11] },
+    { range: [13, 15] }
   ]}
 />
 
