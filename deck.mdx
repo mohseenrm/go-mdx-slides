@@ -11,7 +11,7 @@ export { condensed as theme } from 'mdx-deck/themes'
   <title>Go Lang 🥳</title>
 </Head>
 
-# Hello
+# Go Lang 🥳
 
 ---
 
@@ -26,13 +26,13 @@ Create speaker notes with the Notes component
 ---
 
 <CodeSurfer
-  title="Hola Mundo!"
+  title="Hola Mundo 🌏"
   code={require("!raw-loader!./snippets/hola_mundo.go")}
   lang="go"
   showNumbers={true}
   dark={true}
   steps={[
-    { notes: "Hello world script"},
+    { notes: "basic script"},
     { lines: [1], notes: "packages defined first" },
     { lines: [3], notes: "followed by imports" },
     { range: [5, 7], notes: "eq: int main(int argc, char **argv)" }
@@ -84,14 +84,81 @@ export default Layout
   showNumbers={true}
   dark={true}
   steps={[
-    { notes: "Pointers 😎!" },
-    { lines: [6] },
-    { range: [8, 11] },
-    { range: [13, 15] }
+    { notes: "Function Pointers 🎯" },
+    { lines: [5], notes: "declare first as a type with signature" },
+    { range: [7, 10], notes: "function that accepts function pointers" },
+    { range: [12, 22], notes: "example functions with that signature" },
+    { range: [24, 28], notes: "example usage" },
+    { range: [30, 35] },
   ]}
 />
 
 ---
 
-<https://www.sohamkamani.com/blog/2017/08/24/golang-channels-explained/>
-<https://github.com/golang/go/wiki/Projects>
+<CodeSurfer
+  title="Channels 🏊‍♂️"
+  code={require("!raw-loader!./snippets/channels.go")}
+  lang="go"
+  showNumbers={true}
+  dark={true}
+  steps={[
+    { notes: "Channels 🏊‍♂️" },
+    { range: [3, 5] },
+    { range: [7, 12], notes: "async function/go-routine" },
+    { lines: [7], notes: "clever channel syntax" },
+    { lines: [9], notes: "receive values from channel" },
+    { lines: [11], notes: "send values to channel" },
+    { range: [15, 16], notes: "channel declaration" },
+    { range: [18, 21], notes: "call go-routines" },
+    { range: [23, 25], notes: "pass values into channel" },
+    { range: [27, 30], notes: "receive values from go-routines" },
+  ]}
+/>
+
+---
+
+<CodeSurfer
+  title="JavaScript 😎"
+  code={require("!raw-loader!./snippets/async_await.js")}
+  lang="javascript"
+  showNumbers={true}
+  dark={true}
+  steps={[
+    { notes: "async & await" },
+    { lines: [1], notes: "async function" },
+    { lines: [3], notes: "declare calling function as async" },
+    { range: [4, 6], notes: "await -> unpack Promises" },
+    { lines: [9] },
+  ]}
+/>
+
+---
+
+export default Layout
+
+<CodeSurfer
+  title="CLI utils"
+  code={require("!raw-loader!./snippets/command.go")}
+  lang="go"
+  showNumbers={true}
+  dark={true}
+  steps={[
+    { notes: "example: create-ini" },
+    { range: [3, 16], notes: "multi-line imports" },
+    { range: [4, 10] },
+    { range: [12, 15], notes: "installed packages -> $GOPATH/src/" },
+    { lines: [13], notes: "import aliasing" },
+    { range: [18, 24] },
+    { range: [29, 33], notes: "template strings in go" },
+    { range: [62, 66], notes: "common patterns in go" },
+    { notes: "Happy Gophering!" },
+  ]}
+/>
+
+---
+
+# Resources:
+
+- <https://godoc.org/>
+- <https://www.sohamkamani.com/blog/2017/08/24/golang-channels-explained/>
+- <https://github.com/golang/go/wiki/Projects>
