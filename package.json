@@ -4,7 +4,7 @@
   "description": "go lang presentation with mdx",
   "main": "index.js",
   "scripts": {
-    "build": "\"node_modules/.bin/mdx-deck\" build deck.mdx",
+    "build": "\"node_modules/.bin/mdx-deck\" build --no-html deck.mdx",
     "start": "\"node_modules/.bin/mdx-deck\" deck.mdx --port 9000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
