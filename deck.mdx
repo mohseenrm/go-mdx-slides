@@ -1,6 +1,10 @@
 import { Head, Notes } from 'mdx-deck'
 import { CodeSurfer } from "mdx-deck-code-surfer"
 
+import { FullScreenCode } from 'mdx-deck/layouts'
+
+import Layout from './Layout'
+
 export { condensed as theme } from 'mdx-deck/themes'
 
 <Head>
@@ -25,8 +29,10 @@ Create speaker notes with the Notes component
 
 ---
 
+export default FullScreenCode
+
 <CodeSurfer
-  title="Test Code Title"
+  title="Hola Mundo!"
   code={require("!raw-loader!./snippets/hola_mundo.go")}
   lang="go"
   showNumbers={true}
@@ -34,6 +40,23 @@ Create speaker notes with the Notes component
   steps={[
     { notes: "Start with this note"},
     { lines: [2], notes: "Note for the first step" },
+    { range: [3, 6] }
+  ]}
+/>
+
+---
+
+export default Layout
+
+<CodeSurfer
+  title="Structs"
+  code={require("!raw-loader!./snippets/motorcycle.go")}
+  lang="go"
+  showNumbers={true}
+  dark={true}
+  steps={[
+    { notes: "Start with this note"},
+    { lines: [3], notes: "Note for the first step" },
     { range: [3, 6] }
   ]}
 />
