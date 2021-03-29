@@ -20,7 +20,7 @@
   "homepage": "https://github.com/mohseenrm/go-mdx-slides#readme",
   "devDependencies": {},
   "dependencies": {
-    "mdx-deck": "^1.10.2",
+    "mdx-deck": "^4.1.1",
     "mdx-deck-code-surfer": "^0.5.5",
     "raw-loader": "^1.0.0",
     "styled-components": "^4.3.0"
